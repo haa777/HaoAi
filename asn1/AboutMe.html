@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<!-- this is the head -->
+<head>
+	<title>Hao Ai</title>
+	<link rel="stylesheet" type="text/css" href="as1.css">
+	<div id="randomlogo">
+	<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Random_App_Logo.png/320px-Random_App_Logo.png" width="160" height="76"></div>
+	<meta name="randomAppLogo" content="the logo is download from https://en.wikipedia.org/wiki/File:Random_App_Logo.png and wikipedia remain all the copyright"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="PATH_TO_PLUGIN/jquery.ui.map.js"></script>
+    
+    <script src="as1.js"></script>
+    <!-- <script src="map.js"></script> -->
+</head>
+
+<!-- this is the body -->
+<body>
+
+	<aside class="menubar">
+		<ul><h3>Page Links</h3>
+			<li><a href="Home.html"><h3>Home</h3></a></li>
+			<li><a href="AboutMe.html"><h3>About Me</h3></a></li>
+			<li><a href="ContactMe.html"><h3>Contact Me</h3></a></li>
+		</ul>
+	</aside>
+
+<script>getmap()</script>
+	<div class="person">
+		<div id="left">
+  			<img src="" id="userPhoto"> 
+		</div> 
+<!-- make a tablo style business card -->
+		<div id="right">
+    	<table>
+        <tr>
+          <td id="title"></td>
+        </tr>
+      	<tr>
+        	<td id="name"></td>
+      	</tr> 
+      	<tr>
+        	<td id="gender"></td>
+      	</tr> 
+      	<tr>
+        	<td id="phone"></td>
+      	</tr>
+      	<tr>
+        	<td id="cell"></td>
+      	</tr>
+      	<tr> 
+        	<td id="street"></td>
+      	</tr>
+      	<tr> 
+        	<td id="city"></td>
+      	</tr>
+      	<tr>
+        	<td id="state"></td>
+      	</tr>
+      	<tr>
+        	<td id="zip"></td>
+      	</tr>
+        <tr>
+          <td id="nationality"></td>
+        </tr>
+      	<tr>
+        	<td id="email"></td>
+      	</tr>
+    	</table>
+  	</div>
+	</div> 
+    <div id="map"> <h1>Loading, be patient</h1>
+        </div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPQqCuDqsirhH34omjpETPug5lm5kprUQ&signed_in=true&callback=initMap" async defer>
+      </script>
+</body>
+
+<!-- this is the footer -->
+<footer>
+	
+	<div id = "leftFooter">
+		<a href="http://www.facebook.com/#">
+			<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook Logo" width="30" height="30" border="0"></a>
+	
+		<a href="http://www.twitter.com/#">
+			<img src="http://www.aethlonmedical.com/assets/001/5130.png" alt="Twitter Logo" width="30" height="30" border="0"></a>
+
+		<a href="http://www.linkedin.com/#">
+			<img src="https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz.png" width="30" height="30" border="0"></a>
+	</div>
+
+	<div id = "rightFooter">
+		<small id="cr">copyright&copy;Hao Ai 2016</small>
+	</div>
+	
+</footer>
+
+</html>
