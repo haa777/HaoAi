@@ -1,0 +1,90 @@
+body{
+	background-color: #DDDDDD; 
+}
+
+#layer{
+	margin: auto; 
+	width: 484px; 
+	height: 308px; 
+	z-index: 1; 
+} 
+
+#smalltext {
+	color: #FFFFFF; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	margin-top: 0px;
+}
+
+#carinfo, 
+#oldownerinfo, 
+#newownerinfo{
+	color: #000000; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	background-color: #BDB69C; 
+	margin-top: 5px; 
+}
+
+#infoForm{
+	color: #717D8C; 
+	font-weight: bold; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	padding: 10px; 
+}
+
+#btn{
+	background-color: #41AAC4; 
+	width: 10em;
+	height:3em;
+	font-weight: bold; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	border: 1px solid #666666; 
+	color: #000; 
+	text-decoration: none; 
+	padding: 2px; 
+	font-weight: bold; 
+}
+
+
+
+h1{ 
+	color: #2F343A; 
+	font-family: Arial, Helvetica, sans-serif; 
+} 
+
+#listcar{
+	color: #2F343A; 
+	font-weight: bold; 
+	font-size: 14px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	margin-top: 10px; 
+}
+
+
+#carslist a{ 
+	background-color: #FF9900; 
+	text-decoration: none;              
+	padding: 2px; 
+	color: #000; 
+	margin-bottom: 2px; 
+} 
+#carslist li{ 
+	list-style: none; 
+	border-bottom: 1px dashed #666666; 
+	margin-bottom: 10px; 
+	padding-bottom: 5px; 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset  =  "utf-8">
+	<title>Car club</title>
+
+	<link rel = "stylesheet" type = "text/css" href = "carbook.css"> 
+	
+	<!-- Import JavaScript files for pop-up functionality -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script type = "text/javascript" src = "carbook.js"></script>
+</head>
+<body>
+	<div id="layer">
+		<h1>Car information</h1>
+		<div id="addCar"></div>
+			<form id="infoForm" action="addData.php" method="post"> 
+				<fieldset id="carinfo">
+					<legend>Car Information</legend>
+					<table id="infoForm">
+						<tr>
+							<td>car Brand<br>
+							<input type="text" name="brand" id="brand" size="30"/></td>
+						</tr><tr>
+							<td>car Year<br>
+							<input type="number" name="year" id="year" size="4"/></td>
+						</tr><tr>
+							<td>car type<br>
+							<input type="text" name="type" id="type" size="30"/></td>
+						</tr><tr>
+							<td>car id<br>
+							<input type="number" name="id" id="id" size="5"/></td>
+						</tr><tr>
+							<td>car condition<br>
+							<input type="text" name="condition" id="condition" size="30"/></td>
+						</tr><tr>
+							<td>car accident number<br>
+							<input type="number" name="accident" id="accident" size="2" /></td>
+						</tr>
+					</table>
+				</fieldset>
+				<br/>
+
+				<fieldset id="oldownerinfo">
+					<legend>Old Owner Information</legend>
+					<table id="infoForm">
+					<tr>
+						<td>Name<br>
+						<table>
+						<tr>
+							<td><input type = "text" name = "oldfname" id = "oldfname"  /></td>
+							<td><input type = "text" name = "oldlname" id = "oldlname"  /></td>
+
+						</tr>
+						<tr>
+							<td><div id = "smalltext">Old owner First Name</div></td>
+							<td><div id = "smalltext">Old Owner Last Name</div></td>
+						</tr>
+						</table>
+						</td>
+
+					</tr>
+					<tr>
+						<td>new owner cell<br>
+						<input type="number" name="oldcell" id="oldcell" size="10" /></td>
+					</tr>
+					</table>
+				</fieldset>
+				<br/>
+
+
+
+
+
+				<fieldset id="newownerinfo">
+					<legend>New Owner Information</legend>
+					<table id="infoForm">
+					<tr>
+						<td>Name<br>
+						<table>
+						<tr>
+							<td><input type = "text" name = "newfname" id = "newfname"  /></td>
+							<td><input type = "text" name = "newlname" id = "newlname"  /></td>
+						</tr>
+						<tr>
+							<td><div id = "smalltext">New Owner First Name</div></td>
+							<td><div id = "smalltext">New Owner Last Name</div></td>
+						</tr>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td>new owner cell<br>
+						<input type="number" name="newcell" id="newcell" size="10" /></td>
+					</tr>
+					</table>
+				</fieldset>
+		<table>
+			<tr><td>&nbsp;</td></tr><tr>
+				<td>
+					<input id="btn" type="submit" value="Save new car">
+				</td> 
+			</tr>
+		</table>
+			</form>
+	
+
+<fieldset id="carinfo">
+	<form id="infoForm" action="DeleteData.php" method="post">
+		<table id="infoForm">
+			<tr>
+				<td>the car id you want to delete<input type="text" name="id" id="id" size="30"/>
+				</td>	
+			</tr>			
+		</table>
+	<input id="btn" type="submit" value="Delete a car">
+	</form>
+
+	<form id="display" action ="viewOldOwner.php" method="post"> 
+		<div id="display">old cars owners in database: </div>
+			<table id="infoForm">
+			<tr>
+				<td>the car id you want to show<input type="number" name="id" id="id" size="30"/>
+				</td>	
+			</tr>
+			</table>
+			<input id="btn" type="submit" value="old owner info">
+	</form>
+	<form id="display" action ="viewNewOwner.php" method="post">
+		<div id="display">new cars owners in database: <br/></div>
+			<table id="infoForm">
+			<tr>
+				<td>the car id you want to show<input type="number" name="id" id="id" size="5"/>
+				</td>	
+			</tr>
+			</table>
+			<input id="btn" type="submit" value="new owner info">
+	</form>
+
+	<form id="update" action="updateData.php" method="post">
+		<div id="update">old owner update the new cell: <br/></div>
+			<table id="infoForm">
+				<tr>
+					<td>the id of car you want to update<br/><input type="number" name="id" id="id"></input></td>
+				</tr>
+				<tr>
+					<td>new number of accident<br/><input type="number" name="newacc" id="newacc"></input></td>
+				</tr>
+			</table>
+			<input id="btn" type="submit" value="accident update">
+	</form>
+	</form>
+	</fieldset>
+
+</div>
+
+
+</body>
+</html>
